@@ -4,25 +4,25 @@ import inquirer from "inquirer";
 console.log("\n\t WellCome To \'Code Irfan\' - CLI Simple Calculatar\n");
 let answar = await inquirer.prompt([
     { message: "Enter first number", type: "number", name: "firstnumber" },
-    { message: "Enter second number", type: "number", name: "second number" },
+    { message: "Enter second number", type: "number", name: "secondnumber" },
     {
-        message: "select one of the operators to perform action",
+        message: "select one of tmbhe operators to perform action",
         type: "list",
         name: "operator",
-        choices: ["Addition", "Subtraction", "Multiplication", "Division",],
+        choices: ["addition", "subtraction", "multiplication", "division",],
     },
 ]);
 // conditional statement if-else
-if (answar.operator === "Addition") {
+if (answar.operator === "addition") {
     console.log(answar.firstnumber + answar.secondnumber);
 }
-else if (answar.operator === "Subtraction") {
+else if (answar.operator === "subtraction") {
     console.log(answar.firstnumber - answar.secondnumber);
 }
-else if (answar.operator === "Multiplication") {
+else if (answar.operator === "multiplication") {
     console.log(answar.firstnumber * answar.secondnumber);
 }
-else if (answar.operator === "Division") {
+else if (answar.operator === "division") {
     console.log(answar.firstnumber / answar.secondnumber);
 }
 else {
